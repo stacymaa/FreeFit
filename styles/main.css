@@ -1,0 +1,77 @@
+:root {
+  --montserrat: "Montserrat", serif;
+
+  --light: #f3f3f3;
+  --dark: #2b3541;
+  --yellow: #fbf138;
+}
+
+body {
+  font-family: var(--montserrat);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1326px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  max-width: 1141px;
+  gap: 92px;
+  padding-top: 50px;
+  padding-bottom: 27px;
+}
+
+.logo {
+  display: block;
+  width: 97px;
+  height: 30px;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nav {
+  flex-grow: 1;
+  display: flex;
+  gap: 54px;
+}
+
+.nav-link {
+  color: var(--dark);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.mail {
+  color: var(--dark);
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.mail::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: var(--yellow);
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  left: -12px;
+  bottom: -3px;
+}
