@@ -13,31 +13,11 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <!-- <header class="header">
-      <div class="container">
-        <div class="header-wrapper">
-          <div>
-            <div class="header-left">
-              <div class="header-logo"></div>
-              <button class="header-button" onclick="openModal()"></button>
-            </div>
-            <nav class="header-nav">
-              <a href="#" class="nav-link">Мероприятия</a>
-              <a href="#main-wrapper" class="nav-link">Расписание</a>
-              <a href="#banner-wrapper" class="nav-link">О компании</a>
-            </nav>
-          </div>
-          <div>
-            <a href="mailto:info@freefit.com" class="header-mail">info@freefit.com</a>
-          </div>
-        </div>
-      </div>
-    </header> -->
     <header class="header">
       <div class="container">
         <div class="header-wrapper">
               <div class="header-logo"></div>
-              <button class="header-button" onclick="openModal()"></button>
+              <!-- <button class="header-button" onclick="openModal()"></button> -->
             <nav class="header-nav">
               <a href="#" class="nav-link">Мероприятия</a>
               <a href="#main-wrapper" class="nav-link">Расписание</a>
@@ -105,8 +85,8 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="container container-mail">
+      <section class="container-mail">
+        <div class="container">
           <div class="mail-wrapper">
             <h3 class="mail-h3">Подпишитесь на рассылку</h3>
             <div class="mail-confirm">
@@ -114,8 +94,8 @@
               <button class="mail-btn">Подписаться</button>
             </div>
             <div class="mail-checkbox">
-              <input type="checkbox" value="subscribe" class="mail-checkbox-input">
-              <label for="subscribe" class="mail-checkbox-text">Согласен с обработкой <a href="">персональных данных</a></label>
+              <input type="checkbox" value="subscribe" id="subscribe" class="checkbox">
+              <label for="subscribe" class="mail-checkbox-text">Согласен с обработкой <a href="" class="mail-btn-personal">персональных данных</a></label>
             </div>
           </div>
         </div>
@@ -154,22 +134,21 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container container-footer">
+    <footer class="footer container-footer">
+      <div class="container">
         <div class="footer-wrapper">
           <div class="footer-info">
             <div class="footer-logo"></div>
-              <nav class="footer-nav">
-                <a href="" class="footer-link">Мероприятия</a>
-                <a href="" class="footer-link">Расписание</a>
-                <a href="" class="footer-link">О компании</a>
-              </nav>
-              <a href="mailto:info@freefit.com" class="footer-mail">info@freefit.com</a>
-            </div>
-            <div class="footer-info-grey">
-              <p class="footer-year">	&copy; 2022, Все права защищены</p>
-              <p class="footer-study">Сделано в рамках курса учебной платформы <a href="">Frontend Blok</a></p>
-            </div>
+            <nav class="footer-nav">
+              <a href="" class="footer-link">Мероприятия</a>
+              <a href="" class="footer-link">Расписание</a>
+              <a href="" class="footer-link">О компании</a>
+            </nav>
+            <a href="mailto:info@freefit.com" class="footer-mail">info@freefit.com</a>
+          </div>
+          <div class="footer-info-grey">
+            <p class="footer-year">	&copy; 2022, Все права защищены</p>
+            <p class="footer-study">Сделано в рамках курса учебной платформы <a href="" class="footer-study-link">Frontend Blok</a></p>
           </div>
         </div>
       </div>
