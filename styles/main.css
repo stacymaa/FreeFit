@@ -177,7 +177,7 @@ a {
 
 .hero-img {
   position: absolute;
-  width: clamp(399px, 67vw, 996px);
+  width: clamp(399px, 74vw, 996px);
   right: -10vw;
   bottom: 0;
 }
@@ -600,12 +600,29 @@ a {
   color: var(--black);
 }
 
-
-
-
-
-
 /* Media */
+
+@media (max-width: 1300px) {
+  .hero-img {
+    right: -5vw;
+  }
+}
+
+@media (max-width: 1220px) {
+  .hero-img {
+    right: -2vw;
+  }
+}
+
+@media (max-width: 11195px) {
+  .hero-img {
+    right: 0vw;
+  }
+}
+
+
+
+
 /* 
 @media (max-width: 922px) {
   .header-wrapper {
