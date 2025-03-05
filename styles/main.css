@@ -614,14 +614,11 @@ a {
   }
 }
 
-@media (max-width: 11195px) {
+@media (max-width: 1195px) {
   .hero-img {
     right: 0vw;
   }
 }
-
-
-
 
 /* 
 @media (max-width: 922px) {
