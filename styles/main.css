@@ -18,7 +18,7 @@ a {
 }
 
 .container {
-  width: 100%;
+  /* width: 100%; */
   max-width: 1141px;
   padding-left: 15px;
   padding-right: 15px;
@@ -442,10 +442,11 @@ a {
 .banner-header {
   display: flex;
   margin-bottom: 66px;
+  justify-content: space-between;
 }
 
 .banner-desc {
-  flex-basis: 45%;
+  max-width: 483px;
 }
 
 .banner-h1 {
@@ -486,35 +487,45 @@ a {
   cursor: pointer;
 }
 
+.banner-img-div {
+  width: 581px;
+  height: 336px;
+  /* background-image: url(../images/trainer.png);
+  background-repeat: no-repeat;
+  background-size: contain; */
+}
+
 .banner-img {
-  flex-basis: 55%;
-  padding-left: 90px;
+  width: 100%;
+  height: 100%;
 }
 
 .banner-info {
   color: var(--dark);
   font-size: 18px;
   display: flex;
-  gap: 67px;
-  justify-content: left;
+  justify-content: space-between;
 }
 
 .banner-details-1 {
-  flex-basis: 33.5%;
+  max-width: 231px;
 }
 
 .banner-details-2 {
-  flex-basis: 40%;
-  margin-left: 15px;
+  max-width: 282px;
 }
 
 .banner-details-3 {
-  margin-left: 25px;
+  max-width: 221px;
+}
+
+.banner-details-4 {
+  max-width: 204px;
 }
 
 .banner-info-header {
   font-weight: 700;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 
 .banner-info-text {
@@ -540,7 +551,7 @@ a {
 
 .footer-logo {
   display: block;
-  background-image: url(/images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 97px;
@@ -602,7 +613,7 @@ a {
 
 /* Media */
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
   .hero-img {
     right: -5vw;
   }
@@ -612,64 +623,25 @@ a {
   .hero-img {
     right: -2vw;
   }
-}
+} */
 
 @media (max-width: 1195px) {
+  /* .container {
+overflow: hidden;
+} */
   .hero-img {
     right: 0vw;
   }
 }
 
-/* 
-@media (max-width: 922px) {
-  .header-wrapper {
-    gap: min(6vw, 50px);
-  }
-} */
-
-/* @media (max-width: 1044px) {
-  .header-wrapper {
-    gap: min(5vw, 50px);
-  }
-  .header-nav {
-    gap: min(3vw, 30px);
-  }
-}
-
-@media (max-width: 895px) {
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-  .header-left {
-    display: flex;
-    gap: 5vw;
+@media (max-width: 1015px) {
+  /* .hero-img {
+    width: clamp(399px, 64vw, 996px);
+  } */
+  .button-up {
+    left: 0px;
   }
   .header-nav {
     display: none;
   }
-  .header-button {
-    display: block;
-  }
 }
-
-@media (max-width: 768px) {
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 730px) {
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 450px) {
-  .header-wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-} */
