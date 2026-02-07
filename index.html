@@ -16,14 +16,14 @@
     <header class="header">
       <div class="container">
         <div class="header-wrapper">
-              <div class="header-logo"></div>
-              <!-- <button class="header-button" onclick="openModal()"></button> -->
+            <div class="header-logo"></div>
+            <button aria-label="open site navigation" class="header-button" onclick="openModal()"></button>
             <nav class="header-nav">
-              <a href="#" class="nav-link">Мероприятия</a>
-              <a href="#main-wrapper" class="nav-link">Расписание</a>
-              <a href="#banner-wrapper" class="nav-link">О компании</a>
+              <a href="#" class="nav-link _linkheader">Мероприятия</a>
+              <a href="#main-wrapper" class="nav-link _linkheader">Расписание</a>
+              <a href="#banner-wrapper" class="nav-link _linkheader">О компании</a>
             </nav>
-            <a href="mailto:info@freefit.com" class="header-mail">info@freefit.com</a>
+          <a href="mailto:info@freefit.com" class="header-mail">info@freefit.com</a>
         </div>
       </div>
     </header>
@@ -31,14 +31,14 @@
       <div class="container">
         <div class="hero-wrapper">
           <div class="hero-desc">
-            <h1 class="hero-h1">Онлайн тренировки любой сложности</h1>
+            <h1 class="hero-h1">Онлайн тренировки<br>любой сложности</h1>
             <h2 class="hero-h2"><span>&gt;&nbsp;15</span> тренировок</></h2>
             <p class="hero-text">в области спортивной физиологии и нутрициологии</p>
             <button class="hero-btn">Узнать подробнее</button>
           </div>
           <div class="hero-bg"></div>
           <img src="images/girl.png" alt="" class="hero-img">
-          <a href="#" class="button-up" id="btnUp"></a>
+          <a href="#https://stacymaa.github.io/FreeFit/#mainFreeFit" class="button-up" id="btnUp"></a>
         </div>
       </div>
     </section>
@@ -47,38 +47,38 @@
         <div class="container">
           <div class="main-wrapper" id="main-wrapper">
             <div class="main-header">
-              <h3 class="main-h3">Расписание тренировок</h3>
+              <h3 class="main-h3">Расписание<br>тренировок</h3>
               <p class="main-text">22 - 28 июня</p>
             </div>
             <div class="main-box">
               <div class="main-item">
                 <p class="main-time">22 июня, 10:00</p>
-                <img src="images/main/main-1.svg" alt="" class="main-img" />
+                <img src="images/main/main-1.svg" alt="" class="main-img main-img-1" />
                 <h3 class="main-name">Функциональный тренинг</h3>
               </div>
               <div class="main-item main-diff">
                 <p class="main-time">23 июня, 10:00</p>
-                <img src="images/main/main-2.svg" alt="" class="main-img" />
+                <img src="images/main/main-2.svg" alt="" class="main-img main-img-2" />
                 <h3 class="main-name">Силовой микс</h3>
               </div>
               <div class="main-item main-diff">
                 <p class="main-time">24 июня, 10:00</p>
-                <img src="images/main/main-3.svg" alt="" class="main-img" />
+                <img src="images/main/main-3.svg" alt="" class="main-img main-img-3" />
                 <h3 class="main-name">Body sculpt</h3>
               </div>
               <div class="main-item">
                 <p class="main-time">25 июня, 11:00</p>
-                <img src="images/main/main-4.svg" alt="" class="main-img" />
+                <img src="images/main/main-4.svg" alt="" class="main-img main-img-4" />
                 <h3 class="main-name">Дыхательные практики</h3>
               </div>
               <div class="main-item">
                 <p class="main-time">26 июня, 11:00</p>
-                <img src="images/main/main-5.svg" alt="" class="main-img" />
+                <img src="images/main/main-5.svg" alt="" class="main-img main-img-5" />
                 <h3 class="main-name">L.A.B.</h3>
               </div>
               <div class="main-item main-diff">
                 <p class="main-time">27 июня, 10:00</p>
-                <img src="images/main/main-6.svg" alt="" class="main-img" />
+                <img src="images/main/main-6.svg" alt="" class="main-img main-img-6" />
                 <h3 class="main-name">Комплексная разминка</h3>
               </div>
             </div>
@@ -88,14 +88,18 @@
       <section class="container-mail">
         <div class="container">
           <div class="mail-wrapper">
-            <h3 class="mail-h3">Подпишитесь на рассылку</h3>
-            <div class="mail-confirm">
-              <input type="email" placeholder="Ваш e-mail" class="mail-form">
-              <button class="mail-btn">Подписаться</button>
+            <div class="mail-h3-div">
+              <h3 class="mail-h3">Подпишитесь на рассылку</h3>
             </div>
-            <div class="mail-checkbox">
-              <input type="checkbox" value="subscribe" id="subscribe" class="checkbox">
-              <label for="subscribe" class="mail-checkbox-text">Согласен с обработкой <a href="" class="mail-btn-personal">персональных данных</a></label>
+              <div class="mail-confirm">
+                <div class="mail-info">
+                <input type="email" placeholder="Ваш e-mail" class="mail-form">
+                <div class="mail-checkbox">
+                  <input type="checkbox" value="subscribe" id="subscribe" class="checkbox">
+                  <label for="subscribe" class="mail-checkbox-text">Согласен с обработкой <a href="" class="mail-btn-personal">персональных данных</a></label>
+                </div>
+              </div>
+              <button class="mail-btn">Подписаться</button>
             </div>
           </div>
         </div>
@@ -150,10 +154,19 @@
           </div>
           <div class="footer-info-grey">
             <p class="footer-year">	&copy; 2022, Все права защищены</p>
-            <p class="footer-study">Сделано в рамках курса учебной платформы <a href="#" class="footer-study-link">Frontend Blok</a></p>
+            <!-- <p class="footer-study">Сделано в рамках курса учебной платформы <a href="#" class="footer-study-link">Frontend Blok</a></p> -->
           </div>
         </div>
       </div>
     </footer>
+    <div class="modal" id="modal">
+      <nav class="nav _modal">
+        <a href="#" class="nav-link _linkmodal">Мероприятия</a>
+        <a href="#" class="nav-link _linkmodal">Расписание</a>
+        <a href="#" class="nav-link _linkmodal">О компании</a>
+      </nav>
+      <button aria-label="close site navigation" class="modal-close" onclick="closeModal()"></button>
+    </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
