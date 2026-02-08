@@ -186,7 +186,7 @@ a {
 }
 
 .button-up {
-  background-image: url(/images/arrow.svg);
+  background-image: url(../images/arrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
